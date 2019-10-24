@@ -1,10 +1,11 @@
+# Created by Jorge
+
 from time import sleep
 print(50*'\033[32m-=-\033[m')
 seq = input('Insira sua sequência de nucleotídeos em formato FASTA: ').strip()
 print(50*'\033[32m-=-\033[m')
 print('Processando...\n\n')
-
-sleep(1)
+sleep(2)
 print('\033[::40m_\033[m : Stop códon\n\033[30mM\033[m : Start códon\n')
 seq = ''.join(seq)
 seq = seq.lower()
@@ -20,262 +21,262 @@ for i in seq:
             lista.remove('ata')
             lista.append('\033[36mI\033[m')
             seq1 = ''
-        elif 'aaa' in lista:
+        if 'aaa' in lista:
             lista.remove('aaa')
             lista.append('\033[36mK\033[m')
             seq1 = ''
-        elif 'atc' in lista:
+        if 'atc' in lista:
             lista.remove('atc')
             lista.append('\033[36mI\033[m')
             seq1 = ''
-        elif 'att' in lista:
+        if 'att' in lista:
             lista.remove('att')
             lista.append('\033[36mI\033[m')
             seq1 = ''
-        elif 'aat' in lista:
+        if 'aat' in lista:
             lista.remove('aat')
             lista.append('\033[36mA\033[m')
             seq1 = ''
-        elif 'atg' in lista:
+        if 'atg' in lista:
             lista.remove('atg')
             lista.append('\033[30;1mM\033[m')
             seq1 = ''
-        elif 'aca' in lista:
+        if 'aca' in lista:
             lista.remove('aca')
             lista.append('\033[36mT\033[m')
             seq1 = ''
-        elif 'acc' in lista:
+        if 'acc' in lista:
             lista.remove('acc')
             lista.append('\033[36mT\033[m')
             seq1 = ''
-        elif 'aac' in lista:
+        if 'aac' in lista:
             lista.remove('aac')
             lista.append('\033[36mT\033[m')
-        elif 'acg' in lista:
+        if 'acg' in lista:
             lista.remove('acg')
             lista.append('\033[36mT\033[m')
             seq1 = ''
-        elif 'act' in lista:
+        if 'act' in lista:
             lista.remove('act')
             lista.append('\033[36mT\033[m')
             seq1 = ''
-        elif 'acc' in lista:
+        if 'acc' in lista:
             lista.remove('acc')
             lista.append('\033[36mN\033[m')
             seq1 = ''
-        elif 'aag' in lista:
+        if 'aag' in lista:
             lista.remove('aag')
             lista.append('\033[36mK\033[m')
             seq1 = ''
-        elif 'agc' in lista:
+        if 'agc' in lista:
             lista.remove('agc')
             lista.append('\033[36mS\033[m')
             seq1 = ''
-        elif 'agt' in lista:
+        if 'agt' in lista:
             lista.remove('agt')
             lista.append('\033[36mS\033[m')
             seq1 = ''
-        elif 'aga' in lista:
+        if 'aga' in lista:
             lista.remove('aga')
             lista.append('\033[36mR\033[m')
             seq1 = ''
-        elif 'agg' in lista:
+        if 'agg' in lista:
             lista.remove('agg')
             lista.append('\033[36mR\033[m')
             seq1 = ''
-        elif 'cta' in lista:
+        if 'cta' in lista:
             lista.remove('cta')
             lista.append('\033[36mL\033[m')
             seq1 = ''
-        elif 'ctc' in lista:
+        if 'ctc' in lista:
             lista.remove('ctc')
             lista.append('\033[36mL\033[m')
             seq1 = ''
-        elif 'ctg' in lista:
+        if 'ctg' in lista:
             lista.remove('ctg')
             lista.append('\033[36mL\033[m')
             seq1 = ''
-        elif 'ctt' in lista:
+        if 'ctt' in lista:
             lista.remove('ctt')
             lista.append('\033[36mL\033[m')
             seq1 = ''
-        elif 'cca' in lista:
+        if 'cca' in lista:
             lista.remove('cca')
             lista.append('\033[36mP\033[m')
             seq1 = ''
-        elif 'ccc' in lista:
+        if 'ccc' in lista:
             lista.remove('ccc')
             lista.append('\033[36mP\033[m')
             seq1 = ''
-        elif 'ccg' in lista:
+        if 'ccg' in lista:
             lista.remove('ccg')
             lista.append('\033[36mP\033[m')
             seq1 = ''
-        elif 'cct' in lista:
+        if 'cct' in lista:
             lista.remove('cct')
             lista.append('\033[36mP\033[m')
             seq1 = ''
-        elif 'cac'  in lista:
+        if 'cac'  in lista:
             lista.remove('cac')
             lista.append('\033[36mH\033[m')
             seq1 = ''
-        elif 'cat'  in lista:
+        if 'cat'  in lista:
             lista.remove('cat')
             lista.append('\033[36mH\033[m')
             seq1 = ''
-        elif 'caa'  in lista:
+        if 'caa'  in lista:
             lista.remove('caa')
             lista.append('\033[36mQ\033[m')
             seq1 = ''
-        elif 'cag'  in lista:
+        if 'cag'  in lista:
             lista.remove('cag')
             lista.append('\033[36mQ\033[m')
             seq1 = ''
-        elif 'cga'  in lista:
+        if 'cga'  in lista:
             lista.remove('cga')
             lista.append('\033[36mR\033[m')
             seq1 = ''
-        elif 'cgc'  in lista:
+        if 'cgc'  in lista:
             lista.remove('cgc')
             lista.append('\033[36mR\033[m')
             seq1 = ''
-        elif 'cgg'  in lista:
+        if 'cgg'  in lista:
             lista.remove('cgg')
             lista.append('\033[36mR\033[m')
             seq1 = ''
-        elif 'cgt'  in lista:
+        if 'cgt'  in lista:
             lista.remove('cgt')
             lista.append('\033[36mR\033[m')
             seq1 = ''
-        elif 'gta'  in lista:
+        if 'gta'  in lista:
             lista.remove('gta')
             lista.append('\033[36mV\033[m')
             seq1 = ''
-        elif 'gtc'  in lista:
+        if 'gtc'  in lista:
             lista.remove('gtc')
             lista.append('\033[36mV\033[m')
             seq1 = ''
-        elif 'gtg'  in lista:
+        if 'gtg'  in lista:
             lista.remove('gtg')
             lista.append('\033[36mV\033[m')
             seq1 = ''
-        elif 'gtt'  in lista:
+        if 'gtt'  in lista:
             lista.remove('gtt')
             lista.append('\033[36mV\033[m')
             seq1 = ''
-        elif 'gca'  in lista:
+        if 'gca'  in lista:
             lista.remove('gca')
             lista.append('\033[36mA\033[m')
             seq1 = ''
-        elif 'gcc'  in lista:
+        if 'gcc'  in lista:
             lista.remove('gcc')
             lista.append('\033[36mA\033[m')
             seq1 = ''
-        elif 'gcg'  in lista:
+        if 'gcg'  in lista:
             lista.remove('gcg')
             lista.append('\033[36mA\033[m')
             seq1 = ''
-        elif 'gct'  in lista:
+        if 'gct'  in lista:
             lista.remove('gct')
             lista.append('\033[36mA\033[m')
             seq1 = ''
-        elif 'gac'  in lista:
+        if 'gac'  in lista:
             lista.remove('gac')
             lista.append('\033[36mD\033[m')
             seq1 = ''
-        elif 'gat'  in lista:
+        if 'gat'  in lista:
             lista.remove('gat')
             lista.append('\033[36mD\033[m')
             seq1 = ''
-        elif 'gag'  in lista:
+        if 'gag'  in lista:
             lista.remove('gag')
             lista.append('\033[36mE\033[m')
             seq1 = ''
-        elif 'gga'  in lista:
+        if 'gga'  in lista:
             lista.remove('gga')
             lista.append('\033[36mG\033[m')
             seq1 = ''
-        elif 'gaa'  in lista:
+        if 'gaa'  in lista:
             lista.remove('gaa')
             lista.append('\033[36mE\033[m')
             seq1 = ''
-        elif 'ggc'  in lista:
+        if 'ggc'  in lista:
             lista.remove('ggc')
             lista.append('\033[36mG\033[m')
             seq1 = ''
-        elif 'ggg'  in lista:
+        if 'ggg'  in lista:
             lista.remove('ggg')
             lista.append('\033[36mG\033[m')
             seq1 = ''
-        elif 'ggt'  in lista:
+        if 'ggt'  in lista:
             lista.remove('ggt')
             lista.append('\033[36mG\033[m')
             seq1 = ''
-        elif 'tca'  in lista:
+        if 'tca'  in lista:
             lista.remove('tca')
             lista.append('\033[36mS\033[m')
             seq1 = ''
-        elif 'ttc'  in lista:
+        if 'ttc'  in lista:
             lista.remove('ttc')
             lista.append('\033[36mS\033[m')
             seq1 = ''
-        elif 'tcg'  in lista:
+        if 'tcg'  in lista:
             lista.remove('tcg')
             lista.append('\033[36mS\033[m')
             seq1 = ''
-        elif 'tct'  in lista:
+        if 'tct'  in lista:
             lista.remove('tct')
             lista.append('\033[36mS\033[m')
             seq1 = ''
-        elif 'ttc'  in lista:
+        if 'ttc'  in lista:
             lista.remove('ttc')
             lista.append('\033[36mF\033[m')
             seq1 = ''
-        elif 'ttt'  in lista:
+        if 'ttt'  in lista:
             lista.remove('ttt')
             lista.append('\033[36mF\033[m')
             seq1 = ''
-        elif 'tta' in lista:
+        if 'tta' in lista:
             lista.remove('tta')
             lista.append('\033[36mL\033[m')
             seq1 = ''
-        elif 'ttg' in lista:
+        if 'ttg' in lista:
             lista.remove('ttg')
             lista.append('\033[36mL\033[m')
             seq1 = ''
-        elif 'tac' in lista:
+        if 'tac' in lista:
             lista.remove('tac')
             lista.append('\033[36mY\033[m')
             seq1 = ''
-        elif 'tat' in lista:
+        if 'tat' in lista:
             lista.remove('tat')
             lista.append('\033[36mY\033[m')
             seq1 = ''
-        elif 'taa' in lista:
+        if 'taa' in lista:
             lista.remove('taa')
             lista.append(('\033[::40m_\033[m'))
             seq1 = ''
-        elif 'tag' in lista:
+        if 'tag' in lista:
             lista.remove('tag')
             lista.append(('\033[::40m_\033[m'))
             seq1 = ''
-        elif 'tgc' in lista:
+        if 'tgc' in lista:
             lista.remove('tgc')
             lista.append('\033[36mC\033[m')
             seq1 = ''
-        elif 'tgt' in lista:
+        if 'tgt' in lista:
             lista.remove('tgt')
             lista.append('\033[36mC\033[m')
             seq1 = ''
-        elif 'tga' in lista:
+        if 'tga' in lista:
             lista.remove('tga')
             lista.append(('\033[::40m_\033[m'))
             seq1 = ''
-        elif 'tgg' in lista:
+        if 'tgg' in lista:
             lista.remove('tgg')
             lista.append('\033[36mW\033[m')
             seq1 = ''
-        elif 'tcc' in lista:
+        if 'tcc' in lista:
             lista.remove('tcc')
             lista.append('\033[36mS\033[m')
             seq1 = ''
@@ -299,259 +300,259 @@ for i in seq[1:]:
             lista1.remove('ata')
             lista1.append('\033[36mI\033[m')
             seq2 = ''
-        elif 'aaa' in lista1:
+        if 'aaa' in lista1:
             lista1.remove('aaa')
             lista1.append('\033[36mK\033[m')
             seq2 = ''
-        elif 'atc' in lista1:
+        if 'atc' in lista1:
             lista1.remove('atc')
             lista1.append('\033[36mI\033[m')
             seq2 = ''
-        elif 'att' in lista1:
+        if 'att' in lista1:
             lista1.remove('att')
             lista1.append('\033[36mI\033[m')
             seq2 = ''
-        elif 'atg' in lista1:
+        if 'atg' in lista1:
             lista1.remove('atg')
             lista1.append('\033[30;1mM\033[m')
             seq2 = ''
-        elif 'aca' in lista1:
+        if 'aca' in lista1:
             lista1.remove('aca')
             lista1.append('\033[36mT\033[m')
             seq2 = ''
-        elif 'acc' in lista1:
+        if 'acc' in lista1:
             lista1.remove('acc')
             lista1.append('\033[36mT\033[m')
             seq2 = ''
-        elif 'aat' in lista1:
+        if 'aat' in lista1:
             lista1.remove('aat')
             lista1.append('\033[36mA\033[m')
             seq2 = ''
-        elif 'acg' in lista1:
+        if 'acg' in lista1:
             lista1.remove('acg')
             lista1.append('\033[36mT\033[m')
             seq2 = ''
-        elif 'act' in lista1:
+        if 'act' in lista1:
             lista1.remove('act')
             lista1.append('\033[36mT\033[m')
             seq2 = ''
-        elif 'aac' in lista1:
+        if 'aac' in lista1:
             lista1.remove('aac')
             lista1.append('\033[36mA\033[m')
             seq2 = ''
-        elif 'aag' in lista1:
+        if 'aag' in lista1:
             lista1.remove('aag')
             lista1.append('\033[36mK\033[m')
             seq2 = ''
-        elif 'agc' in lista1:
+        if 'agc' in lista1:
             lista1.remove('agc')
             lista1.append('\033[36mS\033[m')
             seq2 = ''
-        elif 'agt' in lista1:
+        if 'agt' in lista1:
             lista1.remove('agt')
             lista1.append('\033[36mS\033[m')
             seq2 = ''
-        elif 'aga' in lista1:
+        if 'aga' in lista1:
             lista1.remove('aga')
             lista1.append('\033[36mR\033[m')
             seq2 = ''
-        elif 'agg' in lista1:
+        if 'agg' in lista1:
             lista1.remove('agg')
             lista1.append('\033[36mR\033[m')
             seq2 = ''
-        elif 'cta' in lista1:
+        if 'cta' in lista1:
             lista1.remove('cta')
             lista1.append('\033[36mL\033[m')
             seq2 = ''
-        elif 'ctc' in lista1:
+        if 'ctc' in lista1:
             lista1.remove('ctc')
             lista1.append('\033[36mL\033[m')
             seq2 = ''
-        elif 'ctg' in lista1:
+        if 'ctg' in lista1:
             lista1.remove('ctg')
             lista1.append('\033[36mL\033[m')
             seq2 = ''
-        elif 'ctt' in lista1:
+        if 'ctt' in lista1:
             lista1.remove('ctt')
             lista1.append('\033[36mL\033[m')
             seq2 = ''
-        elif 'cca' in lista1:
+        if 'cca' in lista1:
             lista1.remove('cca')
             lista1.append('\033[36mP\033[m')
             seq2 = ''
-        elif 'ccc' in lista1:
+        if 'ccc' in lista1:
             lista1.remove('ccc')
             lista1.append('\033[36mP\033[m')
             seq2 = ''
-        elif 'ccg' in lista1:
+        if 'ccg' in lista1:
             lista1.remove('ccg')
             lista1.append('\033[36mP\033[m')
             seq2 = ''
-        elif 'cct' in lista1:
+        if 'cct' in lista1:
             lista1.remove('cct')
             lista1.append('\033[36mP\033[m')
             seq2 = ''
-        elif 'cac'  in lista1:
+        if 'cac'  in lista1:
             lista1.remove('cac')
             lista1.append('\033[36mH\033[m')
             seq2 = ''
-        elif 'cat'  in lista1:
+        if 'cat'  in lista1:
             lista1.remove('cat')
             lista1.append('\033[36mH\033[m')
             seq2 = ''
-        elif 'caa'  in lista1:
+        if 'caa'  in lista1:
             lista1.remove('caa')
             lista1.append('\033[36mQ\033[m')
             seq2 = ''
-        elif 'cag'  in lista1:
+        if 'cag'  in lista1:
             lista1.remove('cag')
             lista1.append('\033[36mQ\033[m')
             seq2 = ''
-        elif 'cga'  in lista1:
+        if 'cga'  in lista1:
             lista1.remove('cga')
             lista1.append('\033[36mR\033[m')
             seq2 = ''
-        elif 'cgc'  in lista1:
+        if 'cgc'  in lista1:
             lista1.remove('cgc')
             lista1.append('\033[36mR\033[m')
             seq2 = ''
-        elif 'cgg'  in lista1:
+        if 'cgg'  in lista1:
             lista1.remove('cgg')
             lista1.append('\033[36mR\033[m')
             seq2 = ''
-        elif 'cgt'  in lista1:
+        if 'cgt'  in lista1:
             lista1.remove('cgt')
             lista1.append('\033[36mR\033[m')
             seq2 = ''
-        elif 'gta'  in lista1:
+        if 'gta'  in lista1:
             lista1.remove('gta')
             lista1.append('\033[36mV\033[m')
             seq2 = ''
-        elif 'gtc'  in lista1:
+        if 'gtc'  in lista1:
             lista1.remove('gtc')
             lista1.append('\033[36mV\033[m')
             seq2 = ''
-        elif 'gtg'  in lista1:
+        if 'gtg'  in lista1:
             lista1.remove('gtg')
             lista1.append('\033[36mV\033[m')
             seq2 = ''
-        elif 'gtt'  in lista1:
+        if 'gtt'  in lista1:
             lista1.remove('gtt')
             lista1.append('\033[36mV\033[m')
             seq2 = ''
-        elif 'gca'  in lista1:
+        if 'gca'  in lista1:
             lista1.remove('gca')
             lista1.append('\033[36mA\033[m')
             seq2 = ''
-        elif 'gcc'  in lista1:
+        if 'gcc'  in lista1:
             lista1.remove('gcc')
             lista1.append('\033[36mA\033[m')
             seq2 = ''
-        elif 'gcg'  in lista1:
+        if 'gcg'  in lista1:
             lista1.remove('gcg')
             lista1.append('\033[36mA\033[m')
             seq2 = ''
-        elif 'gct'  in lista1:
+        if 'gct'  in lista1:
             lista1.remove('gct')
             lista1.append('\033[36mA\033[m')
             seq2 = ''
-        elif 'gac'  in lista1:
+        if 'gac'  in lista1:
             lista1.remove('gac')
             lista1.append('\033[36mD\033[m')
             seq2 = ''
-        elif 'gat'  in lista1:
+        if 'gat'  in lista1:
             lista1.remove('gat')
             lista1.append('\033[36mD\033[m')
             seq2 = ''
-        elif 'gag'  in lista1:
+        if 'gag'  in lista1:
             lista1.remove('gag')
             lista1.append('\033[36mE\033[m')
             seq2 = ''
-        elif 'gga'  in lista1:
+        if 'gga'  in lista1:
             lista1.remove('gga')
             lista1.append('\033[36mG\033[m')
             seq2 = ''
-        elif 'gaa'  in lista1:
+        if 'gaa'  in lista1:
             lista1.remove('gaa')
             lista1.append('\033[36mE\033[m')
             seq2 = ''
-        elif 'ggc'  in lista1:
+        if 'ggc'  in lista1:
             lista1.remove('ggc')
             lista1.append('\033[36mG\033[m')
             seq2 = ''
-        elif 'ggg'  in lista1:
+        if 'ggg'  in lista1:
             lista1.remove('ggg')
             lista1.append('\033[36mG\033[m')
             seq2 = ''
-        elif 'ggt'  in lista1:
+        if 'ggt'  in lista1:
             lista1.remove('ggt')
             lista1.append('\033[36mG\033[m')
             seq2 = ''
-        elif 'tca'  in lista1:
+        if 'tca'  in lista1:
             lista1.remove('tca')
             lista1.append('\033[36mS\033[m')
             seq2 = ''
-        elif 'ttc'  in lista1:
+        if 'ttc'  in lista1:
             lista1.remove('ttc')
             lista1.append('\033[36mS\033[m')
             seq2 = ''
-        elif 'tcg'  in lista1:
+        if 'tcg'  in lista1:
             lista1.remove('tcg')
             lista1.append('\033[36mS\033[m')
             seq2 = ''
-        elif 'tct'  in lista1:
+        if 'tct'  in lista1:
             lista1.remove('tct')
             lista1.append('\033[36mS\033[m')
             seq2 = ''
-        elif 'ttc'  in lista1:
+        if 'ttc'  in lista1:
             lista1.remove('ttc')
             lista1.append('\033[36mF\033[m')
             seq2 = ''
-        elif 'ttt'  in lista1:
+        if 'ttt'  in lista1:
             lista1.remove('ttt')
             lista1.append('\033[36mF\033[m')
             seq2 = ''
-        elif 'tta' in lista1:
+        if 'tta' in lista1:
             lista1.remove('tta')
             lista1.append('\033[36mL\033[m')
             seq2 = ''
-        elif 'ttg' in lista1:
+        if 'ttg' in lista1:
             lista1.remove('ttg')
             lista1.append('\033[36mL\033[m')
             seq2 = ''
-        elif 'tac' in lista1:
+        if 'tac' in lista1:
             lista1.remove('tac')
             lista1.append('\033[36mY\033[m')
             seq2 = ''
-        elif 'tat' in lista1:
+        if 'tat' in lista1:
             lista1.remove('tat')
             lista1.append('\033[36mY\033[m')
             seq2 = ''
-        elif 'taa' in lista1:
+        if 'taa' in lista1:
             lista1.remove('taa')
             lista1.append(('\033[::40m_\033[m'))
             seq2 = ''
-        elif 'tag' in lista1:
+        if 'tag' in lista1:
             lista1.remove('tag')
             lista1.append(('\033[::40m_\033[m'))
             seq2 = ''
-        elif 'tgc' in lista1:
+        if 'tgc' in lista1:
             lista1.remove('tgc')
             lista1.append('\033[36mC\033[m')
             seq2 = ''
-        elif 'tgt' in lista1:
+        if 'tgt' in lista1:
             lista1.remove('tgt')
             lista1.append('\033[36mC\033[m')
             seq2 = ''
-        elif 'tga' in lista1:
+        if 'tga' in lista1:
             lista1.remove('tga')
             lista1.append(('\033[::40m_\033[m'))
             seq2 = ''
-        elif 'tgg' in lista1:
+        if 'tgg' in lista1:
             lista1.remove('tgg')
             lista1.append('\033[36mW\033[m')
             seq2 = ''
-        elif 'tcc' in lista1:
+        if 'tcc' in lista1:
             lista1.remove('tcc')
             lista1.append('\033[36mS\033[m')
             seq2 = ''
@@ -575,259 +576,259 @@ for i in seq[2:]:
             lista2.remove('ata')
             lista2.append('\033[36mI\033[m')
             seq3 = ''
-        elif 'aaa' in lista2:
+        if 'aaa' in lista2:
             lista2.remove('aaa')
             lista2.append('\033[36mK\033[m')
             seq3 = ''
-        elif 'atc' in lista2:
+        if 'atc' in lista2:
             lista2.remove('atc')
             lista2.append('\033[36mI\033[m')
             seq3 = ''
-        elif 'att' in lista2:
+        if 'att' in lista2:
             lista2.remove('att')
             lista2.append('\033[36mI\033[m')
             seq3 = ''
-        elif 'aat' in lista2:
+        if 'aat' in lista2:
             lista2.remove('aat')
             lista2.append('\033[36mA\033[m')
             seq3 = ''
-        elif 'atg' in lista2:
+        if 'atg' in lista2:
             lista2.remove('atg')
             lista2.append('\033[30;1mM\033[m')
             seq3 = ''
-        elif 'aca' in lista2:
+        if 'aca' in lista2:
             lista2.remove('aca')
             lista2.append('\033[36mT\033[m')
             seq3 = ''
-        elif 'acc' in lista2:
+        if 'acc' in lista2:
             lista2.remove('acc')
             lista2.append('\033[36mT\033[m')
             seq3 = ''
-        elif 'acg' in lista2:
+        if 'acg' in lista2:
             lista2.remove('acg')
             lista2.append('\033[36mT\033[m')
             seq3 = ''
-        elif 'act' in lista2:
+        if 'act' in lista2:
             lista2.remove('act')
             lista2.append('\033[36mT\033[m')
             seq3 = ''
-        elif 'aac' in lista2:
+        if 'aac' in lista2:
             lista2.remove('aac')
             lista2.append('\033[36mA\033[m')
             seq3 = ''
-        elif 'aag' in lista2:
+        if 'aag' in lista2:
             lista2.remove('aag')
             lista2.append('\033[36mK\033[m')
             seq3 = ''
-        elif 'agc' in lista2:
+        if 'agc' in lista2:
             lista2.remove('agc')
             lista2.append('\033[36mS\033[m')
             seq3 = ''
-        elif 'agt' in lista2:
+        if 'agt' in lista2:
             lista2.remove('agt')
             lista2.append('\033[36mS\033[m')
             seq3 = ''
-        elif 'aga' in lista2:
+        if 'aga' in lista2:
             lista2.remove('aga')
             lista2.append('\033[36mR\033[m')
             seq3 = ''
-        elif 'agg' in lista2:
+        if 'agg' in lista2:
             lista2.remove('agg')
             lista2.append('\033[36mR\033[m')
             seq3 = ''
-        elif 'cta' in lista2:
+        if 'cta' in lista2:
             lista2.remove('cta')
             lista2.append('\033[36mL\033[m')
             seq3 = ''
-        elif 'ctc' in lista2:
+        if 'ctc' in lista2:
             lista2.remove('ctc')
             lista2.append('\033[36mL\033[m')
             seq3 = ''
-        elif 'ctg' in lista2:
+        if 'ctg' in lista2:
             lista2.remove('ctg')
             lista2.append('\033[36mL\033[m')
             seq3 = ''
-        elif 'ctt' in lista2:
+        if 'ctt' in lista2:
             lista2.remove('ctt')
             lista2.append('\033[36mL\033[m')
             seq3 = ''
-        elif 'cca' in lista2:
+        if 'cca' in lista2:
             lista2.remove('cca')
             lista2.append('\033[36mP\033[m')
             seq3 = ''
-        elif 'ccc' in lista2:
+        if 'ccc' in lista2:
             lista2.remove('ccc')
             lista2.append('\033[36mP\033[m')
             seq3 = ''
-        elif 'ccg' in lista2:
+        if 'ccg' in lista2:
             lista2.remove('ccg')
             lista2.append('\033[36mP\033[m')
             seq3 = ''
-        elif 'cct' in lista2:
+        if 'cct' in lista2:
             lista2.remove('cct')
             lista2.append('\033[36mP\033[m')
             seq3 = ''
-        elif 'cac'  in lista2:
+        if 'cac'  in lista2:
             lista2.remove('cac')
             lista2.append('\033[36mH\033[m')
             seq3 = ''
-        elif 'cat'  in lista2:
+        if 'cat'  in lista2:
             lista2.remove('cat')
             lista2.append('\033[36mH\033[m')
             seq3 = ''
-        elif 'caa'  in lista2:
+        if 'caa'  in lista2:
             lista2.remove('caa')
             lista2.append('\033[36mQ\033[m')
             seq3 = ''
-        elif 'cag'  in lista2:
+        if 'cag'  in lista2:
             lista2.remove('cag')
             lista2.append('\033[36mQ\033[m')
             seq3 = ''
-        elif 'cga'  in lista2:
+        if 'cga'  in lista2:
             lista2.remove('cga')
             lista2.append('\033[36mR\033[m')
             seq3 = ''
-        elif 'cgc'  in lista2:
+        if 'cgc'  in lista2:
             lista2.remove('cgc')
             lista2.append('\033[36mR\033[m')
             seq3 = ''
-        elif 'cgg'  in lista2:
+        if 'cgg'  in lista2:
             lista2.remove('cgg')
             lista2.append('\033[36mR\033[m')
             seq3 = ''
-        elif 'cgt'  in lista2:
+        if 'cgt'  in lista2:
             lista2.remove('cgt')
             lista2.append('\033[36mR\033[m')
             seq3 = ''
-        elif 'gta'  in lista2:
+        if 'gta'  in lista2:
             lista2.remove('gta')
             lista2.append('\033[36mV\033[m')
             seq3 = ''
-        elif 'gtc'  in lista2:
+        if 'gtc'  in lista2:
             lista2.remove('gtc')
             lista2.append('\033[36mV\033[m')
             seq3 = ''
-        elif 'gtg'  in lista2:
+        if 'gtg'  in lista2:
             lista2.remove('gtg')
             lista2.append('\033[36mV\033[m')
             seq3 = ''
-        elif 'gtt'  in lista2:
+        if 'gtt'  in lista2:
             lista2.remove('gtt')
             lista2.append('\033[36mV\033[m')
             seq3 = ''
-        elif 'gca'  in lista2:
+        if 'gca'  in lista2:
             lista2.remove('gca')
             lista2.append('\033[36mA\033[m')
             seq3 = ''
-        elif 'gcc'  in lista2:
+        if 'gcc'  in lista2:
             lista2.remove('gcc')
             lista2.append('\033[36mA\033[m')
             seq3 = ''
-        elif 'gcg'  in lista2:
+        if 'gcg'  in lista2:
             lista2.remove('gcg')
             lista2.append('\033[36mA\033[m')
             seq3 = ''
-        elif 'gct'  in lista2:
+        if 'gct'  in lista2:
             lista2.remove('gct')
             lista2.append('\033[36mA\033[m')
             seq3 = ''
-        elif 'gac'  in lista2:
+        if 'gac'  in lista2:
             lista2.remove('gac')
             lista2.append('\033[36mD\033[m')
             seq3 = ''
-        elif 'gat'  in lista2:
+        if 'gat'  in lista2:
             lista2.remove('gat')
             lista2.append('\033[36mD\033[m')
             seq3 = ''
-        elif 'gag'  in lista2:
+        if 'gag'  in lista2:
             lista2.remove('gag')
             lista2.append('\033[36mE\033[m')
             seq3 = ''
-        elif 'gga'  in lista2:
+        if 'gga'  in lista2:
             lista2.remove('gga')
             lista2.append('\033[36mG\033[m')
             seq3 = ''
-        elif 'gaa'  in lista2:
+        if 'gaa'  in lista2:
             lista2.remove('gaa')
             lista2.append('\033[36mE\033[m')
             seq3 = ''
-        elif 'ggc'  in lista2:
+        if 'ggc'  in lista2:
             lista2.remove('ggc')
             lista2.append('\033[36mG\033[m')
             seq3 = ''
-        elif 'ggg'  in lista2:
+        if 'ggg'  in lista2:
             lista2.remove('ggg')
             lista2.append('\033[36mG\033[m')
             seq3 = ''
-        elif 'ggt'  in lista2:
+        if 'ggt'  in lista2:
             lista2.remove('ggt')
             lista2.append('\033[36mG\033[m')
             seq3 = ''
-        elif 'tca'  in lista2:
+        if 'tca'  in lista2:
             lista2.remove('tca')
             lista2.append('\033[36mS\033[m')
             seq3 = ''
-        elif 'ttc'  in lista2:
+        if 'ttc'  in lista2:
             lista2.remove('ttc')
             lista2.append('\033[36mS\033[m')
             seq3 = ''
-        elif 'tcc' in lista2:
+        if 'tcc' in lista2:
             lista2.remove('tcc')
             lista2.append('\033[36mS\033[m')
             seq3 = ''
-        elif 'tcg'  in lista2:
+        if 'tcg'  in lista2:
             lista2.remove('tcg')
             lista2.append('\033[36mS\033[m')
             seq3 = ''
-        elif 'tct'  in lista2:
+        if 'tct'  in lista2:
             lista2.remove('tct')
             lista2.append('\033[36mS\033[m')
             seq3 = ''
-        elif 'ttc'  in lista2:
+        if 'ttc'  in lista2:
             lista2.remove('ttc')
             lista2.append('\033[36mF\033[m')
             seq3 = ''
-        elif 'ttt'  in lista2:
+        if 'ttt'  in lista2:
             lista2.remove('ttt')
             lista2.append('\033[36mF\033[m')
             seq3 = ''
-        elif 'tta' in lista2:
+        if 'tta' in lista2:
             lista2.remove('tta')
             lista2.append('\033[36mL\033[m')
             seq3 = ''
-        elif 'ttg' in lista2:
+        if 'ttg' in lista2:
             lista2.remove('ttg')
             lista2.append('\033[36mL\033[m')
             seq3 = ''
-        elif 'tac' in lista2:
+        if 'tac' in lista2:
             lista2.remove('tac')
             lista2.append('\033[36mY\033[m')
             seq3 = ''
-        elif 'tat' in lista2:
+        if 'tat' in lista2:
             lista2.remove('tat')
             lista2.append('\033[36mY\033[m')
             seq3 = ''
-        elif 'taa' in lista2:
+        if 'taa' in lista2:
             lista2.remove('taa')
             lista2.append(('\033[::40m_\033[m'))
             seq3 = ''
-        elif 'tag' in lista2:
+        if 'tag' in lista2:
             lista2.remove('tag')
             lista2.append(('\033[::40m_\033[m'))
             seq3 = ''
-        elif 'tgc' in lista2:
+        if 'tgc' in lista2:
             lista2.remove('tgc')
             lista2.append('\033[36mC\033[m')
             seq3 = ''
-        elif 'tgt' in lista2:
+        if 'tgt' in lista2:
             lista2.remove('tgt')
             lista2.append('\033[36mC\033[m')
             seq3 = ''
-        elif 'tga' in lista2:
+        if 'tga' in lista2:
             lista2.remove('tga')
             lista2.append(('\033[::40m_\033[m'))
             seq3 = ''
-        elif 'tgg' in lista2:
+        if 'tgg' in lista2:
             lista2.remove('tgg')
             lista2.append('\033[36mW\033[m')
             seq3 = ''
@@ -852,263 +853,263 @@ for i in seq[d2::-1]:
             lista3.remove('ata')
             lista3.append('\033[36mI\033[m')
             seq4 = ''
-        elif 'aaa' in lista3:
+        if 'aaa' in lista3:
             lista3.remove('aaa')
             lista3.append('\033[36mK\033[m')
             seq4 = ''
-        elif 'atc' in lista3:
+        if 'atc' in lista3:
             lista3.remove('atc')
             lista3.append('\033[36mI\033[m')
             seq4 = ''
-        elif 'att' in lista3:
+        if 'att' in lista3:
             lista3.remove('att')
             lista3.append('\033[36mI\033[m')
             seq4 = ''
-        elif 'aat' in lista3:
+        if 'aat' in lista3:
             lista3.remove('aat')
             lista3.append('\033[36mA\033[m')
             seq4 = ''
-        elif 'atg' in lista3:
+        if 'atg' in lista3:
             lista3.remove('atg')
             lista3.append('\033[30;1mM\033[m')
             seq4 = ''
-        elif 'aca' in lista3:
+        if 'aca' in lista3:
             lista3.remove('aca')
             lista3.append('\033[36mT\033[m')
             seq4 = ''
-        elif 'acc' in lista3:
+        if 'acc' in lista3:
             lista3.remove('acc')
             lista3.append('\033[36mT\033[m')
             seq4 = ''
-        elif 'acg' in lista3:
+        if 'acg' in lista3:
             lista3.remove('acg')
             lista3.append('\033[36mT\033[m')
             seq4 = ''
-        elif 'act' in lista3:
+        if 'act' in lista3:
             lista3.remove('act')
             lista3.append('\033[36mT\033[m')
             seq4 = ''
-        elif 'acc' in lista3:
+        if 'acc' in lista3:
             lista3.remove('acc')
             lista3.append('\033[36mN\033[m')
             seq4 = ''
-        elif 'aag' in lista3:
+        if 'aag' in lista3:
             lista3.remove('aag')
             lista3.append('\033[36mK\033[m')
             seq4 = ''
-        elif 'agc' in lista3:
+        if 'agc' in lista3:
             lista3.remove('agc')
             lista3.append('\033[36mS\033[m')
             seq4 = ''
-        elif 'agt' in lista3:
+        if 'agt' in lista3:
             lista3.remove('agt')
             lista3.append('\033[36mS\033[m')
             seq4 = ''
-        elif 'aga' in lista3:
+        if 'aga' in lista3:
             lista3.remove('aga')
             lista3.append('\033[36mR\033[m')
             seq4 = ''
-        elif 'agg' in lista3:
+        if 'agg' in lista3:
             lista3.remove('agg')
             lista3.append('\033[36mR\033[m')
             seq4 = ''
-        elif 'cta' in lista3:
+        if 'cta' in lista3:
             lista3.remove('cta')
             lista3.append('\033[36mL\033[m')
             seq4 = ''
-        elif 'ctc' in lista3:
+        if 'ctc' in lista3:
             lista3.remove('ctc')
             lista3.append('\033[36mL\033[m')
             seq4 = ''
-        elif 'ctg' in lista3:
+        if 'ctg' in lista3:
             lista3.remove('ctg')
             lista3.append('\033[36mL\033[m')
             seq4 = ''
-        elif 'ctt' in lista3:
+        if 'ctt' in lista3:
             lista3.remove('ctt')
             lista3.append('\033[36mL\033[m')
             seq4 = ''
-        elif 'cca' in lista3:
+        if 'cca' in lista3:
             lista3.remove('cca')
             lista3.append('\033[36mP\033[m')
             seq4 = ''
-        elif 'ccc' in lista3:
+        if 'ccc' in lista3:
             lista3.remove('ccc')
             lista3.append('\033[36mP\033[m')
             seq4 = ''
-        elif 'ccg' in lista3:
+        if 'ccg' in lista3:
             lista3.remove('ccg')
             lista3.append('\033[36mP\033[m')
             seq4 = ''
-        elif 'cct' in lista3:
+        if 'cct' in lista3:
             lista3.remove('cct')
             lista3.append('\033[36mP\033[m')
             seq4 = ''
-        elif 'cac'  in lista3:
+        if 'cac'  in lista3:
             lista3.remove('cac')
             lista3.append('\033[36mH\033[m')
             seq4 = ''
-        elif 'cat'  in lista3:
+        if 'cat'  in lista3:
             lista3.remove('cat')
             lista3.append('\033[36mH\033[m')
             seq4 = ''
-        elif 'caa'  in lista3:
+        if 'caa'  in lista3:
             lista3.remove('caa')
             lista3.append('\033[36mQ\033[m')
             seq4 = ''
-        elif 'cag'  in lista3:
+        if 'cag'  in lista3:
             lista3.remove('cag')
             lista3.append('\033[36mQ\033[m')
             seq4 = ''
-        elif 'cga'  in lista3:
+        if 'cga'  in lista3:
             lista3.remove('cga')
             lista3.append('\033[36mR\033[m')
             seq4 = ''
-        elif 'cgc'  in lista3:
+        if 'cgc'  in lista3:
             lista3.remove('cgc')
             lista3.append('\033[36mR\033[m')
             seq4 = ''
-        elif 'cgg'  in lista3:
+        if 'cgg'  in lista3:
             lista3.remove('cgg')
             lista3.append('\033[36mR\033[m')
             seq4 = ''
-        elif 'cgt'  in lista3:
+        if 'cgt'  in lista3:
             lista3.remove('cgt')
             lista3.append('\033[36mR\033[m')
             seq4 = ''
-        elif 'gta'  in lista3:
+        if 'gta'  in lista3:
             lista3.remove('gta')
             lista3.append('\033[36mV\033[m')
             seq4 = ''
-        elif 'gtc'  in lista3:
+        if 'gtc'  in lista3:
             lista3.remove('gtc')
             lista3.append('\033[36mV\033[m')
             seq4 = ''
-        elif 'gtg'  in lista3:
+        if 'gtg'  in lista3:
             lista3.remove('gtg')
             lista3.append('\033[36mV\033[m')
             seq4 = ''
-        elif 'gtt'  in lista3:
+        if 'gtt'  in lista3:
             lista3.remove('gtt')
             lista3.append('\033[36mV\033[m')
             seq4 = ''
-        elif 'gca'  in lista3:
+        if 'gca'  in lista3:
             lista3.remove('gca')
             lista3.append('\033[36mA\033[m')
             seq4 = ''
-        elif 'gcc'  in lista3:
+        if 'gcc'  in lista3:
             lista3.remove('gcc')
             lista3.append('\033[36mA\033[m')
             seq4 = ''
-        elif 'gcg'  in lista3:
+        if 'gcg'  in lista3:
             lista3.remove('gcg')
             lista3.append('\033[36mA\033[m')
             seq4 = ''
-        elif 'gct'  in lista3:
+        if 'gct'  in lista3:
             lista3.remove('gct')
             lista3.append('\033[36mA\033[m')
             seq4 = ''
-        elif 'gac'  in lista3:
+        if 'gac'  in lista3:
             lista3.remove('gac')
             lista3.append('\033[36mD\033[m')
             seq4 = ''
-        elif 'gat'  in lista3:
+        if 'gat'  in lista3:
             lista3.remove('gat')
             lista3.append('\033[36mD\033[m')
             seq4 = ''
-        elif 'gag'  in lista3:
+        if 'gag'  in lista3:
             lista3.remove('gag')
             lista3.append('\033[36mE\033[m')
             seq4 = ''
-        elif 'gga'  in lista3:
+        if 'gga'  in lista3:
             lista3.remove('gga')
             lista3.append('\033[36mG\033[m')
             seq4 = ''
-        elif 'gaa'  in lista3:
+        if 'gaa'  in lista3:
             lista3.remove('gaa')
             lista3.append('\033[36mE\033[m')
             seq4 = ''
-        elif 'ggc'  in lista3:
+        if 'ggc'  in lista3:
             lista3.remove('ggc')
             lista3.append('\033[36mG\033[m')
             seq4 = ''
-        elif 'ggg'  in lista3:
+        if 'ggg'  in lista3:
             lista3.remove('ggg')
             lista3.append('\033[36mG\033[m')
             seq4 = ''
-        elif 'ggt'  in lista3:
+        if 'ggt'  in lista3:
             lista3.remove('ggt')
             lista3.append('\033[36mG\033[m')
             seq4 = ''
-        elif 'tca'  in lista3:
+        if 'tca'  in lista3:
             lista3.remove('tca')
             lista3.append('\033[36mS\033[m')
             seq4 = ''
-        elif 'ttc'  in lista3:
+        if 'ttc'  in lista3:
             lista3.remove('ttc')
             lista3.append('\033[36mS\033[m')
             seq4 = ''
-        elif 'tcg'  in lista3:
+        if 'tcg'  in lista3:
             lista3.remove('tcg')
             lista3.append('\033[36mS\033[m')
             seq4 = ''
-        elif 'tct'  in lista3:
+        if 'tct'  in lista3:
             lista3.remove('tct')
             lista3.append('\033[36mS\033[m')
             seq4 = ''
-        elif 'ttc'  in lista3:
+        if 'ttc'  in lista3:
             lista3.remove('ttc')
             lista3.append('\033[36mF\033[m')
             seq4 = ''
-        elif 'ttt'  in lista3:
+        if 'ttt'  in lista3:
             lista3.remove('ttt')
             lista3.append('\033[36mF\033[m')
             seq4 = ''
-        elif 'tta' in lista3:
+        if 'tta' in lista3:
             lista3.remove('tta')
             lista3.append('\033[36mL\033[m')
             seq4 = ''
-        elif 'ttg' in lista3:
+        if 'ttg' in lista3:
             lista3.remove('ttg')
             lista3.append('\033[36mL\033[m')
             seq4 = ''
-        elif 'tac' in lista3:
+        if 'tac' in lista3:
             lista3.remove('tac')
             lista3.append('\033[36mY\033[m')
             seq4 = ''
-        elif 'tat' in lista3:
+        if 'tat' in lista3:
             lista3.remove('tat')
             lista3.append('\033[36mY\033[m')
             seq4 = ''
-        elif 'taa' in lista3:
+        if 'taa' in lista3:
             lista3.remove('taa')
             lista3.append(('\033[::40m_\033[m'))
             seq4 = ''
-        elif 'tag' in lista3:
+        if 'tag' in lista3:
             lista3.remove('tag')
             lista3.append(('\033[::40m_\033[m'))
             seq4 = ''
-        elif 'tgc' in lista3:
+        if 'tgc' in lista3:
             lista3.remove('tgc')
             lista3.append('\033[36mC\033[m')
             seq4 = ''
-        elif 'tgt' in lista3:
+        if 'tgt' in lista3:
             lista3.remove('tgt')
             lista3.append('\033[36mC\033[m')
             seq4 = ''
-        elif 'tga' in lista3:
+        if 'tga' in lista3:
             lista3.remove('tga')
             lista3.append(('\033[::40m_\033[m'))
             seq4 = ''
-        elif 'tgg' in lista3:
+        if 'tgg' in lista3:
             lista3.remove('tgg')
             lista3.append('\033[36mW\033[m')
             seq4 = ''
-        elif 'tcc' in lista3:
+        if 'tcc' in lista3:
             lista3.remove('tcc')
             lista3.append('\033[36mS\033[m')
             seq4 = ''
-        elif 'aac' in lista3:
+        if 'aac' in lista3:
             lista3.remove('aac')
             lista3.append('\033[36mA\033[m')
             seq4 = ''
@@ -1132,263 +1133,263 @@ for i in seq[e2::-2]:
             lista4.remove('ata')
             lista4.append('\033[36mI\033[m')
             seq5 = ''
-        elif 'aaa' in lista4:
+        if 'aaa' in lista4:
             lista4.remove('aaa')
             lista4.append('\033[36mK\033[m')
             seq5 = ''
-        elif 'atc' in lista4:
+        if 'atc' in lista4:
             lista4.remove('atc')
             lista4.append('\033[36mI\033[m')
             seq5 = ''
-        elif 'att' in lista4:
+        if 'att' in lista4:
             lista4.remove('att')
             lista4.append('\033[36mI\033[m')
             seq5 = ''
-        elif 'aat' in lista4:
+        if 'aat' in lista4:
             lista4.remove('aat')
             lista4.append('\033[36mA\033[m')
             seq5 = ''
-        elif 'atg' in lista4:
+        if 'atg' in lista4:
             lista4.remove('atg')
             lista4.append('\033[30;1mM\033[m')
             seq5 = ''
-        elif 'aca' in lista4:
+        if 'aca' in lista4:
             lista4.remove('aca')
             lista4.append('\033[36mT\033[m')
             seq5 = ''
-        elif 'acc' in lista4:
+        if 'acc' in lista4:
             lista4.remove('acc')
             lista4.append('\033[36mT\033[m')
             seq5 = ''
-        elif 'acg' in lista4:
+        if 'acg' in lista4:
             lista4.remove('acg')
             lista4.append('\033[36mT\033[m')
             seq5 = ''
-        elif 'act' in lista4:
+        if 'act' in lista4:
             lista4.remove('act')
             lista4.append('\033[36mT\033[m')
             seq5 = ''
-        elif 'acc' in lista4:
+        if 'acc' in lista4:
             lista4.remove('acc')
             lista4.append('\033[36mN\033[m')
             seq5 = ''
-        elif 'aag' in lista4:
+        if 'aag' in lista4:
             lista4.remove('aag')
             lista4.append('\033[36mK\033[m')
             seq5 = ''
-        elif 'agc' in lista4:
+        if 'agc' in lista4:
             lista4.remove('agc')
             lista4.append('\033[36mS\033[m')
             seq5 = ''
-        elif 'agt' in lista4:
+        if 'agt' in lista4:
             lista4.remove('agt')
             lista4.append('\033[36mS\033[m')
             seq5 = ''
-        elif 'aga' in lista4:
+        if 'aga' in lista4:
             lista4.remove('aga')
             lista4.append('\033[36mR\033[m')
             seq5 = ''
-        elif 'agg' in lista4:
+        if 'agg' in lista4:
             lista4.remove('agg')
             lista4.append('\033[36mR\033[m')
             seq5 = ''
-        elif 'cta' in lista4:
+        if 'cta' in lista4:
             lista4.remove('cta')
             lista4.append('\033[36mL\033[m')
             seq5 = ''
-        elif 'ctc' in lista4:
+        if 'ctc' in lista4:
             lista4.remove('ctc')
             lista4.append('\033[36mL\033[m')
             seq5 = ''
-        elif 'ctg' in lista4:
+        if 'ctg' in lista4:
             lista4.remove('ctg')
             lista4.append('\033[36mL\033[m')
             seq5 = ''
-        elif 'ctt' in lista4:
+        if 'ctt' in lista4:
             lista4.remove('ctt')
             lista4.append('\033[36mL\033[m')
             seq5 = ''
-        elif 'cca' in lista4:
+        if 'cca' in lista4:
             lista4.remove('cca')
             lista4.append('\033[36mP\033[m')
             seq5 = ''
-        elif 'ccc' in lista4:
+        if 'ccc' in lista4:
             lista4.remove('ccc')
             lista4.append('\033[36mP\033[m')
             seq5 = ''
-        elif 'ccg' in lista4:
+        if 'ccg' in lista4:
             lista4.remove('ccg')
             lista4.append('\033[36mP\033[m')
             seq5 = ''
-        elif 'cct' in lista4:
+        if 'cct' in lista4:
             lista4.remove('cct')
             lista4.append('\033[36mP\033[m')
             seq5 = ''
-        elif 'cac'  in lista4:
+        if 'cac'  in lista4:
             lista4.remove('cac')
             lista4.append('\033[36mH\033[m')
             seq5 = ''
-        elif 'cat'  in lista4:
+        if 'cat'  in lista4:
             lista4.remove('cat')
             lista4.append('\033[36mH\033[m')
             seq5 = ''
-        elif 'caa'  in lista4:
+        if 'caa'  in lista4:
             lista4.remove('caa')
             lista4.append('\033[36mQ\033[m')
             seq5 = ''
-        elif 'cag'  in lista4:
+        if 'cag'  in lista4:
             lista4.remove('cag')
             lista4.append('\033[36mQ\033[m')
             seq5 = ''
-        elif 'cga'  in lista4:
+        if 'cga'  in lista4:
             lista4.remove('cga')
             lista4.append('\033[36mR\033[m')
             seq5 = ''
-        elif 'cgc'  in lista4:
+        if 'cgc'  in lista4:
             lista4.remove('cgc')
             lista4.append('\033[36mR\033[m')
             seq5 = ''
-        elif 'cgg'  in lista4:
+        if 'cgg'  in lista4:
             lista4.remove('cgg')
             lista4.append('\033[36mR\033[m')
             seq5 = ''
-        elif 'cgt'  in lista4:
+        if 'cgt'  in lista4:
             lista4.remove('cgt')
             lista4.append('\033[36mR\033[m')
             seq5 = ''
-        elif 'gta'  in lista4:
+        if 'gta'  in lista4:
             lista4.remove('gta')
             lista4.append('\033[36mV\033[m')
             seq5 = ''
-        elif 'gtc'  in lista4:
+        if 'gtc'  in lista4:
             lista4.remove('gtc')
             lista4.append('\033[36mV\033[m')
             seq5 = ''
-        elif 'gtg'  in lista4:
+        if 'gtg'  in lista4:
             lista4.remove('gtg')
             lista4.append('\033[36mV\033[m')
             seq5 = ''
-        elif 'gtt'  in lista4:
+        if 'gtt'  in lista4:
             lista4.remove('gtt')
             lista4.append('\033[36mV\033[m')
             seq5 = ''
-        elif 'gca'  in lista4:
+        if 'gca'  in lista4:
             lista4.remove('gca')
             lista4.append('\033[36mA\033[m')
             seq5 = ''
-        elif 'gcc'  in lista4:
+        if 'gcc'  in lista4:
             lista4.remove('gcc')
             lista4.append('\033[36mA\033[m')
             seq5 = ''
-        elif 'gcg'  in lista4:
+        if 'gcg'  in lista4:
             lista4.remove('gcg')
             lista4.append('\033[36mA\033[m')
             seq5 = ''
-        elif 'gct'  in lista4:
+        if 'gct'  in lista4:
             lista4.remove('gct')
             lista4.append('\033[36mA\033[m')
             seq5 = ''
-        elif 'gac'  in lista4:
+        if 'gac'  in lista4:
             lista4.remove('gac')
             lista4.append('\033[36mD\033[m')
             seq5 = ''
-        elif 'gat'  in lista4:
+        if 'gat'  in lista4:
             lista4.remove('gat')
             lista4.append('\033[36mD\033[m')
             seq5 = ''
-        elif 'gag'  in lista4:
+        if 'gag'  in lista4:
             lista4.remove('gag')
             lista4.append('\033[36mE\033[m')
             seq5 = ''
-        elif 'gga'  in lista4:
+        if 'gga'  in lista4:
             lista4.remove('gga')
             lista4.append('\033[36mG\033[m')
             seq5 = ''
-        elif 'gaa'  in lista4:
+        if 'gaa'  in lista4:
             lista4.remove('gaa')
             lista4.append('\033[36mE\033[m')
             seq5 = ''
-        elif 'ggc'  in lista4:
+        if 'ggc'  in lista4:
             lista4.remove('ggc')
             lista4.append('\033[36mG\033[m')
             seq5 = ''
-        elif 'ggg'  in lista4:
+        if 'ggg'  in lista4:
             lista4.remove('ggg')
             lista4.append('\033[36mG\033[m')
             seq5 = ''
-        elif 'ggt'  in lista4:
+        if 'ggt'  in lista4:
             lista4.remove('ggt')
             lista4.append('\033[36mG\033[m')
             seq5 = ''
-        elif 'tca'  in lista4:
+        if 'tca'  in lista4:
             lista4.remove('tca')
             lista4.append('\033[36mS\033[m')
             seq5 = ''
-        elif 'ttc'  in lista4:
+        if 'ttc'  in lista4:
             lista4.remove('ttc')
             lista4.append('\033[36mS\033[m')
             seq5 = ''
-        elif 'tcg'  in lista4:
+        if 'tcg'  in lista4:
             lista4.remove('tcg')
             lista4.append('\033[36mS\033[m')
             seq5 = ''
-        elif 'tct'  in lista4:
+        if 'tct'  in lista4:
             lista4.remove('tct')
             lista4.append('\033[36mS\033[m')
             seq5 = ''
-        elif 'ttc'  in lista4:
+        if 'ttc'  in lista4:
             lista4.remove('ttc')
             lista4.append('\033[36mF\033[m')
             seq5 = ''
-        elif 'ttt'  in lista4:
+        if 'ttt'  in lista4:
             lista4.remove('ttt')
             lista4.append('\033[36mF\033[m')
             seq5 = ''
-        elif 'tta' in lista4:
+        if 'tta' in lista4:
             lista4.remove('tta')
             lista4.append('\033[36mL\033[m')
             seq5 = ''
-        elif 'ttg' in lista4:
+        if 'ttg' in lista4:
             lista4.remove('ttg')
             lista4.append('\033[36mL\033[m')
             seq5 = ''
-        elif 'tac' in lista4:
+        if 'tac' in lista4:
             lista4.remove('tac')
             lista4.append('\033[36mY\033[m')
             seq5 = ''
-        elif 'tat' in lista4:
+        if 'tat' in lista4:
             lista4.remove('tat')
             lista4.append('\033[36mY\033[m')
             seq5 = ''
-        elif 'taa' in lista4:
+        if 'taa' in lista4:
             lista4.remove('taa')
             lista4.append(('\033[::40m_\033[m'))
             seq5 = ''
-        elif 'tag' in lista4:
+        if 'tag' in lista4:
             lista4.remove('tag')
             lista4.append(('\033[::40m_\033[m'))
             seq5 = ''
-        elif 'tgc' in lista4:
+        if 'tgc' in lista4:
             lista4.remove('tgc')
             lista4.append('\033[36mC\033[m')
             seq5 = ''
-        elif 'tgt' in lista4:
+        if 'tgt' in lista4:
             lista4.remove('tgt')
             lista4.append('\033[36mC\033[m')
             seq5 = ''
-        elif 'tga' in lista4:
+        if 'tga' in lista4:
             lista4.remove('tga')
             lista4.append(('\033[::40m_\033[m'))
             seq5 = ''
-        elif 'tgg' in lista4:
+        if 'tgg' in lista4:
             lista4.remove('tgg')
             lista4.append('\033[36mW\033[m')
             seq5 = ''
-        elif 'tcc' in lista4:
+        if 'tcc' in lista4:
             lista4.remove('tcc')
             lista4.append('\033[36mS\033[m')
             seq5 = ''
-        elif 'aac' in lista4:
+        if 'aac' in lista4:
             lista4.remove('aac')
             lista4.append('\033[36mA\033[m')
             seq5 = ''
@@ -1412,263 +1413,263 @@ for i in seq[f2::-3]:
             lista5.remove('ata')
             lista5.append('\033[36mI\033[m')
             seq6 = ''
-        elif 'aaa' in lista5:
+        if 'aaa' in lista5:
             lista5.remove('aaa')
             lista5.append('\033[36mK\033[m')
             seq6 = ''
-        elif 'atc' in lista5:
+        if 'atc' in lista5:
             lista5.remove('atc')
             lista5.append('\033[36mI\033[m')
             seq6 = ''
-        elif 'att' in lista5:
+        if 'att' in lista5:
             lista5.remove('att')
             lista5.append('\033[36mI\033[m')
             seq6 = ''
-        elif 'aat' in lista5:
+        if 'aat' in lista5:
             lista5.remove('aat')
             lista5.append('\033[36mA\033[m')
             seq6 = ''
-        elif 'atg' in lista5:
+        if 'atg' in lista5:
             lista5.remove('atg')
             lista5.append('\033[30;1mM\033[m')
             seq6 = ''
-        elif 'aca' in lista5:
+        if 'aca' in lista5:
             lista5.remove('aca')
             lista5.append('\033[36mT\033[m')
             seq6 = ''
-        elif 'acc' in lista5:
+        if 'acc' in lista5:
             lista5.remove('acc')
             lista5.append('\033[36mT\033[m')
             seq6 = ''
-        elif 'acg' in lista5:
+        if 'acg' in lista5:
             lista5.remove('acg')
             lista5.append('\033[36mT\033[m')
             seq6 = ''
-        elif 'act' in lista5:
+        if 'act' in lista5:
             lista5.remove('act')
             lista5.append('\033[36mT\033[m')
             seq6 = ''
-        elif 'acc' in lista5:
+        if 'acc' in lista5:
             lista5.remove('acc')
             lista5.append('\033[36mN\033[m')
             seq6 = ''
-        elif 'aag' in lista5:
+        if 'aag' in lista5:
             lista5.remove('aag')
             lista5.append('\033[36mK\033[m')
             seq6 = ''
-        elif 'agc' in lista5:
+        if 'agc' in lista5:
             lista5.remove('agc')
             lista5.append('\033[36mS\033[m')
             seq6 = ''
-        elif 'agt' in lista5:
+        if 'agt' in lista5:
             lista5.remove('agt')
             lista5.append('\033[36mS\033[m')
             seq6 = ''
-        elif 'aga' in lista5:
+        if 'aga' in lista5:
             lista5.remove('aga')
             lista5.append('\033[36mR\033[m')
             seq6 = ''
-        elif 'agg' in lista5:
+        if 'agg' in lista5:
             lista5.remove('agg')
             lista5.append('\033[36mR\033[m')
             seq6 = ''
-        elif 'cta' in lista5:
+        if 'cta' in lista5:
             lista5.remove('cta')
             lista5.append('\033[36mL\033[m')
             seq6 = ''
-        elif 'ctc' in lista5:
+        if 'ctc' in lista5:
             lista5.remove('ctc')
             lista5.append('\033[36mL\033[m')
             seq6 = ''
-        elif 'ctg' in lista5:
+        if 'ctg' in lista5:
             lista5.remove('ctg')
             lista5.append('\033[36mL\033[m')
             seq6 = ''
-        elif 'ctt' in lista5:
+        if 'ctt' in lista5:
             lista5.remove('ctt')
             lista5.append('\033[36mL\033[m')
             seq6 = ''
-        elif 'cca' in lista5:
+        if 'cca' in lista5:
             lista5.remove('cca')
             lista5.append('\033[36mP\033[m')
             seq6 = ''
-        elif 'ccc' in lista5:
+        if 'ccc' in lista5:
             lista5.remove('ccc')
             lista5.append('\033[36mP\033[m')
             seq6 = ''
-        elif 'ccg' in lista5:
+        if 'ccg' in lista5:
             lista5.remove('ccg')
             lista5.append('\033[36mP\033[m')
             seq6 = ''
-        elif 'cct' in lista5:
+        if 'cct' in lista5:
             lista5.remove('cct')
             lista5.append('\033[36mP\033[m')
             seq6 = ''
-        elif 'cac'  in lista5:
+        if 'cac'  in lista5:
             lista5.remove('cac')
             lista5.append('\033[36mH\033[m')
             seq6 = ''
-        elif 'cat'  in lista5:
+        if 'cat'  in lista5:
             lista5.remove('cat')
             lista5.append('\033[36mH\033[m')
             seq6 = ''
-        elif 'caa'  in lista5:
+        if 'caa'  in lista5:
             lista5.remove('caa')
             lista5.append('\033[36mQ\033[m')
             seq6 = ''
-        elif 'cag'  in lista5:
+        if 'cag'  in lista5:
             lista5.remove('cag')
             lista5.append('\033[36mQ\033[m')
             seq6 = ''
-        elif 'cga'  in lista5:
+        if 'cga'  in lista5:
             lista5.remove('cga')
             lista5.append('\033[36mR\033[m')
             seq6 = ''
-        elif 'cgc'  in lista5:
+        if 'cgc'  in lista5:
             lista5.remove('cgc')
             lista5.append('\033[36mR\033[m')
             seq6 = ''
-        elif 'cgg'  in lista5:
+        if 'cgg'  in lista5:
             lista5.remove('cgg')
             lista5.append('\033[36mR\033[m')
             seq6 = ''
-        elif 'cgt'  in lista5:
+        if 'cgt'  in lista5:
             lista5.remove('cgt')
             lista5.append('\033[36mR\033[m')
             seq6 = ''
-        elif 'gta'  in lista5:
+        if 'gta'  in lista5:
             lista5.remove('gta')
             lista5.append('\033[36mV\033[m')
             seq6 = ''
-        elif 'gtc'  in lista5:
+        if 'gtc'  in lista5:
             lista5.remove('gtc')
             lista5.append('\033[36mV\033[m')
             seq6 = ''
-        elif 'gtg'  in lista5:
+        if 'gtg'  in lista5:
             lista5.remove('gtg')
             lista5.append('\033[36mV\033[m')
             seq6 = ''
-        elif 'gtt'  in lista5:
+        if 'gtt'  in lista5:
             lista5.remove('gtt')
             lista5.append('\033[36mV\033[m')
             seq6 = ''
-        elif 'gca'  in lista5:
+        if 'gca'  in lista5:
             lista5.remove('gca')
             lista5.append('\033[36mA\033[m')
             seq6 = ''
-        elif 'gcc'  in lista5:
+        if 'gcc'  in lista5:
             lista5.remove('gcc')
             lista5.append('\033[36mA\033[m')
             seq6 = ''
-        elif 'gcg'  in lista5:
+        if 'gcg'  in lista5:
             lista5.remove('gcg')
             lista5.append('\033[36mA\033[m')
             seq6 = ''
-        elif 'gct'  in lista5:
+        if 'gct'  in lista5:
             lista5.remove('gct')
             lista5.append('\033[36mA\033[m')
             seq6 = ''
-        elif 'gac'  in lista5:
+        if 'gac'  in lista5:
             lista5.remove('gac')
             lista5.append('\033[36mD\033[m')
             seq6 = ''
-        elif 'gat'  in lista5:
+        if 'gat'  in lista5:
             lista5.remove('gat')
             lista5.append('\033[36mD\033[m')
             seq6 = ''
-        elif 'gag'  in lista5:
+        if 'gag'  in lista5:
             lista5.remove('gag')
             lista5.append('\033[36mE\033[m')
             seq6 = ''
-        elif 'gga'  in lista5:
+        if 'gga'  in lista5:
             lista5.remove('gga')
             lista5.append('\033[36mG\033[m')
             seq6 = ''
-        elif 'gaa'  in lista5:
+        if 'gaa'  in lista5:
             lista5.remove('gaa')
             lista5.append('\033[36mE\033[m')
             seq6 = ''
-        elif 'ggc'  in lista5:
+        if 'ggc'  in lista5:
             lista5.remove('ggc')
             lista5.append('\033[36mG\033[m')
             seq6 = ''
-        elif 'ggg'  in lista5:
+        if 'ggg'  in lista5:
             lista5.remove('ggg')
             lista5.append('\033[36mG\033[m')
             seq6 = ''
-        elif 'ggt'  in lista5:
+        if 'ggt'  in lista5:
             lista5.remove('ggt')
             lista5.append('\033[36mG\033[m')
             seq6 = ''
-        elif 'tca'  in lista5:
+        if 'tca'  in lista5:
             lista5.remove('tca')
             lista5.append('\033[36mS\033[m')
             seq6 = ''
-        elif 'ttc'  in lista5:
+        if 'ttc'  in lista5:
             lista5.remove('ttc')
             lista5.append('\033[36mS\033[m')
             seq6 = ''
-        elif 'tcg'  in lista5:
+        if 'tcg'  in lista5:
             lista5.remove('tcg')
             lista5.append('\033[36mS\033[m')
             seq6 = ''
-        elif 'tct'  in lista5:
+        if 'tct'  in lista5:
             lista5.remove('tct')
             lista5.append('\033[36mS\033[m')
             seq6 = ''
-        elif 'ttc'  in lista5:
+        if 'ttc'  in lista5:
             lista5.remove('ttc')
             lista5.append('\033[36mF\033[m')
             seq6 = ''
-        elif 'ttt'  in lista5:
+        if 'ttt'  in lista5:
             lista5.remove('ttt')
             lista5.append('\033[36mF\033[m')
             seq6 = ''
-        elif 'tta' in lista5:
+        if 'tta' in lista5:
             lista5.remove('tta')
             lista5.append('\033[36mL\033[m')
             seq6 = ''
-        elif 'ttg' in lista5:
+        if 'ttg' in lista5:
             lista5.remove('ttg')
             lista5.append('\033[36mL\033[m')
             seq6 = ''
-        elif 'tac' in lista5:
+        if 'tac' in lista5:
             lista5.remove('tac')
             lista5.append('\033[36mY\033[m')
             seq6 = ''
-        elif 'tat' in lista5:
+        if 'tat' in lista5:
             lista5.remove('tat')
             lista5.append('\033[36mY\033[m')
             seq6 = ''
-        elif 'taa' in lista5:
+        if 'taa' in lista5:
             lista5.remove('taa')
             lista5.append(('\033[::40m_\033[m'))
             seq6 = ''
-        elif 'tag' in lista5:
+        if 'tag' in lista5:
             lista5.remove('tag')
             lista5.append(('\033[::40m_\033[m'))
             seq6 = ''
-        elif 'tgc' in lista5:
+        if 'tgc' in lista5:
             lista5.remove('tgc')
             lista5.append('\033[36mC\033[m')
             seq6 = ''
-        elif 'tgt' in lista5:
+        if 'tgt' in lista5:
             lista5.remove('tgt')
             lista5.append('\033[36mC\033[m')
             seq6 = ''
-        elif 'tga' in lista5:
+        if 'tga' in lista5:
             lista5.remove('tga')
             lista5.append(('\033[::40m_\033[m'))
             seq6 = ''
-        elif 'tgg' in lista5:
+        if 'tgg' in lista5:
             lista5.remove('tgg')
             lista5.append('\033[36mW\033[m')
             seq6 = ''
-        elif 'tcc' in lista5:
+        if 'tcc' in lista5:
             lista5.remove('tcc')
             lista5.append('\033[36mS\033[m')
             seq6 = ''
-        elif 'aac' in lista5:
+        if 'aac' in lista5:
             lista5.remove('aac')
             lista5.append('\033[36mA\033[m')
             seq6 = ''
