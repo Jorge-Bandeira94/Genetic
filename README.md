@@ -8,13 +8,14 @@ O código do programa é simples e utiliza iteração e fatiamento da string (se
 
 input: "Sua sequência"
 
-lista = []
-seq1 = ''
-for i in seq:
-    seq1 = seq1 + i
-    if len(seq1) == 3:
-        lista.append(seq1)
-        seq1 = ''
+
+    lista = []
+    seq1 = ''
+    for i in seq:
+        seq1 = seq1 + i
+        if len(seq1) == 3:
+            lista.append(seq1)
+            seq1 = ''
         
 Ao detectar um trio (códon) de letras na lista o condicional 'if' faz sua susbstituição pelo simbolo do aminoácido correspondente em azul:
 
