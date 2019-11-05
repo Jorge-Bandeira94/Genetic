@@ -21,7 +21,7 @@ Ao detectar um trio (códon) de letras na lista o condicional 'if' faz sua susbs
 
         if 'ata' in lista:
             lista.remove('ata')
-            lista.append('\033[36mI\033[m')
+            lista.append('I')
             seq1 = ''
 São retornadas 12 sequências, seis correspondentes as variações nos frames de leitura da sequência e seis correspondentes a cada um dos
 resultados anteriores porém, excluindo toda parte da sequência composta por cauda Poli-A e toda parte prescendete ao primeiro códon de
@@ -31,4 +31,6 @@ Os códons de início "ATG' e final são ilustrados com 'M' colorido de branco e
 As caudas Polia-A das sequências são traduzidas em lisinas (K) que são removidas na representação da sequência a partir do primeiro códon
 de início
 
-Obs: As letras correspondentes a cada códon ainda estão em fase beta. Algums 'A's podem representar Arginina enquanto outros Alanina
+Histórico:
+1 - Agora um arquivo é criado no formato .csv plotando as seis leituras de sequência diferentes além de outras seis fragmentadas a cada
+stop códon, facilitando a seleção de fragmentos da cadeia de aminoácidos
